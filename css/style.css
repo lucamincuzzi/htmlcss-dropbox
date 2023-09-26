@@ -17,8 +17,11 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
+    /* Debug */
+    border: 1px solid black;
+    min-height: 1800px;
 }
 
 .col.description {
@@ -65,9 +68,43 @@ body {
     padding: 0 4rem 2rem;
 }
 
-.hero .row {
+.row {
     display: flex;
     justify-content: center;
 }
 
 /* MAIN */
+
+main .container {
+    margin-top: 5rem;
+}
+
+.subscription h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.subscription .row {
+    margin-top: 5rem;
+}
+
+.subscription .col {
+    width: calc(100% / 3);
+    min-height: 1000px;
+    background-color: brown;
+    margin-right: 2rem;
+    /* Debug */
+    border: 1px solid black;
+}
+
+.row.enterprise {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col.enterprise {
+    width: 100%;
+    background-color: brown;
+    min-height: 350px;
+}
