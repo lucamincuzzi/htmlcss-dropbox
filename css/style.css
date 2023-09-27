@@ -20,8 +20,7 @@ body {
     width: 65%;
     margin: 0 auto;
     /* Debug */
-    border: 1px solid black;
-    min-height: 1800px;
+    border: 1px solid black;;
 }
 
 .col.description {
@@ -130,4 +129,11 @@ main .container {
     width: calc(100% / 3 - 1rem);
     background-color: blue;
     min-height: 400px;
+}
+
+/* Cta */
+
+.section.cta a {
+   text-decoration: underline;
+   color: #1b1bf0;
 }
