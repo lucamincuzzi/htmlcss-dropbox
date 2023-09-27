@@ -23,13 +23,13 @@ body {
     border: 1px solid black;;
 }
 
-.col.description {
+.col.small {
     background-color: blueviolet;
     width: 30%;
     min-height: 460px;
 }
 
-.col.image {
+.col.large {
     background-color: aquamarine;
     width: 70%;
     min-height: 460px;
@@ -144,6 +144,37 @@ main .container {
     width: calc(100% / 3);
     min-height: 500px;
     background-color: grey;
+    /* Debug */
+    border: 1px solid black;
+}
+
+/* CTA prova gratuita */
+
+.free-trial.wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    background-color: lightcyan;
+}
+
+.free-trial .col.large {
+    min-height: 200px;
+}
+
+.free-trial .col.small {
+    min-height: 200px;
+}
+
+/* FAQ */
+
+.faq {
+    margin-bottom: 100px;
+}
+
+.faq .question {
+    width: 100%;
+    min-height: 100px;
+    background-color: aqua;
     /* Debug */
     border: 1px solid black;
 }
