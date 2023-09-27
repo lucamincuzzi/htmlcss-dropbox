@@ -38,6 +38,7 @@ body {
 .row {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 h2 {
@@ -177,4 +178,49 @@ main .container {
     background-color: aqua;
     /* Debug */
     border: 1px solid black;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+    width: 100%;
+    margin-top: 150px;
+    background-color: black;
+    min-height: 20rem;
+    color: white;
+}
+
+.container.footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer .row {
+    margin-top: 3rem;
+    gap: 1rem
+}
+
+.footer .col {
+    width: calc(95% / 5);
+    min-height: 200px;
+    background-color: lightskyblue;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+}
+
+footer hr {
+    width: 120px;
+}
+
+.container.lang {
+    margin-top: 3rem;
+    padd
+}
+
+.selected-lang {
+    margin: 2rem 0;
 }
