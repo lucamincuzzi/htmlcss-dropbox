@@ -32,10 +32,12 @@ br {
 }
 
 .btn {
+    display: inline-block;
     padding: .5rem .9rem;
     background-color: var(--btn-bg-color);
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .container {
@@ -47,12 +49,10 @@ br {
 
 .col.small {
     width: 25%;
-    min-height: 460px;
 }
 
 .col.large {
     width: 75%;
-    min-height: 460px;
 }
 
 .row {
@@ -157,6 +157,8 @@ h2 {
 
 /* MAIN */
 
+/* Subscription */
+
 main .container {
     margin-top: 5rem;
 }
@@ -165,16 +167,126 @@ main .container {
     margin-top: 0;
 }
 
+.fee {
+    margin: 2rem 0;
+}
+
+.fee input {
+    margin-right: .5rem;
+}
+
+.fee span {
+    margin-right: 2rem;
+}
+
 .subscription .row {
     gap: 1rem;
 }
 
 .subscription .col {
     width: calc(100% / 3);
-    min-height: 1000px;
-    background-color: brown;
-    /* Debug */
-    border: 1px solid black;
+    border: 1px solid lightgray;
+}
+
+.subscription h4 {
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.subscription hr {
+    margin-top: 10px;
+}
+
+.card {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card ul {
+    margin: 3rem 0 3rem 0;
+    list-style-type: none;
+}
+
+.card li {
+    padding-bottom: 1rem;
+}
+
+.plan-specs li{
+    display: flex;
+    gap: .5rem;
+}
+
+.card hr {
+    width: 20%;
+    opacity: .7;
+    margin: 3rem 0;
+}
+
+.card h4 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.card.enterprise {
+    width: 95%;
+    margin-top: 2rem;
+}
+
+.enterprise-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card.enterprise .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-contact {
+    font-weight: bold;
+}
+
+.desc {
+    margin: 5rem 0 2rem;
+}
+
+.card.enterprise h3 {
+    font-size: 1.7rem;
+}
+
+.fa-check {
+    color: #0061ff;
+}
+
+.subscription .btn {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+}
+
+.plan-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.plan-cost {
+    font-weight: bold;
+}
+
+.user-time-ratio {
+    opacity: .7;
+}
+
+.cta-buy {
+    color: #0061ff;
+    margin-left: 3px;
+    text-decoration: underline;
 }
 
 .row.enterprise {
@@ -184,10 +296,10 @@ main .container {
 
 .col.enterprise {
     width: 100%;
-    background-color: brown;
-    min-height: 350px;
     margin-top: 2rem;
 }
+
+/* Partner */
 
 .partner .row {
     flex-direction: row-reverse;
