@@ -43,8 +43,6 @@ br {
 .container {
     width: 65%;
     margin: 0 auto;
-    /* Debug */
-    border: 1px solid black;
 }
 
 .col.small {
@@ -330,13 +328,16 @@ main .container {
 .features .row {
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 2rem;
 }
 
 .features .col {
-    width: calc(100% / 3 - 1rem);
-    background-color: blue;
-    min-height: 400px;
+    width: calc(100% / 3 - 2rem);
+}
+
+.features h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Cta */
@@ -361,16 +362,27 @@ main .container {
 .free-trial.wrapper {
     display: inline-block;
     width: 100%;
-    margin-top: 0;
-    background-color: lightcyan;
+    padding-bottom: 6rem;
+    background-color: #b4d0e7;
 }
 
 .free-trial .col.large {
-    min-height: 200px;
+    width: 40%;
+    font-size: 2rem;
+    color: #61082b
 }
 
 .free-trial .col.small {
-    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.free-trial-btn span{
+    position: relative;
+    top: 20px;
+    background-color: #ffffff;
+    padding: 1rem 3rem;
 }
 
 /* FAQ */
