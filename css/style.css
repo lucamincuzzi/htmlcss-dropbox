@@ -40,10 +40,6 @@ br {
     text-align: center;
 }
 
-.btn:hover {
-    filter: brightness(1.2);
-}
-
 .container {
     width: 65%;
     margin: 0 auto;
@@ -72,6 +68,28 @@ h2 {
     margin-top: 10rem;
 }
 
+/* ACTIONS */
+
+.link:hover {
+    border-bottom: 1px solid #0061ff;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+.question:hover + .answer{
+    display: block;
+}
+
+.middle-question:hover {
+    border-bottom: 0px;
+}
+
+.last-question:hover {
+    border-bottom: 0px;
+}
+
 /* HEADER */
 
 .nav-container {
@@ -95,8 +113,15 @@ h2 {
 .nav-section ul {
     display: flex;
     margin-left: 1rem;
+    height: 100%;
     list-style-type: none;
     gap: 2rem;
+}
+
+.nav-section li {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .about {
@@ -419,18 +444,6 @@ main .container {
 .answer {
     padding: 1rem 0;
     display: none;
-}
-
-.question:hover + .answer{
-    display: block;
-}
-
-.middle-question:hover {
-    border-bottom: 0px;
-}
-
-.last-question:hover {
-    border-bottom: 0px;
 }
 
 /* FOOTER */
