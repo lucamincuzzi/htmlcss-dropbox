@@ -40,6 +40,10 @@ br {
     text-align: center;
 }
 
+.btn:hover {
+    filter: brightness(1.2);
+}
+
 .container {
     width: 65%;
     margin: 0 auto;
@@ -387,16 +391,46 @@ main .container {
 
 /* FAQ */
 
-.faq {
-    margin-bottom: 100px;
+.faq h2{
+    margin: 150px 0 80px;
 }
 
 .faq .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    min-height: 100px;
-    background-color: aqua;
-    /* Debug */
-    border: 1px solid black;
+    padding: 3rem 0 3rem;
+}
+
+.first-question, .middle-question {
+    border-top: 1px solid black;
+}
+
+.last-question, .middle-question {
+    border-bottom: 1px solid black;
+}
+
+.fa-angle-down {
+    position: relative;
+    right: 40px;
+}
+
+.answer {
+    padding: 1rem 0;
+    display: none;
+}
+
+.question:hover + .answer{
+    display: block;
+}
+
+.middle-question:hover {
+    border-bottom: 0px;
+}
+
+.last-question:hover {
+    border-bottom: 0px;
 }
 
 /* FOOTER */
