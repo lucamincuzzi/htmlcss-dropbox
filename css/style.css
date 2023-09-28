@@ -382,7 +382,7 @@ main .container {
     position: relative;
     top: 20px;
     background-color: #ffffff;
-    padding: 1rem 3rem;
+    padding: .7rem 3rem;
 }
 
 /* FAQ */
@@ -405,7 +405,6 @@ main .container {
     width: 100%;
     margin-top: 150px;
     background-color: black;
-    min-height: 20rem;
     color: white;
 }
 
@@ -421,25 +420,46 @@ main .container {
 
 .footer .col {
     width: calc(95% / 5);
-    min-height: 200px;
-    background-color: lightskyblue;
+    padding-top: 3rem;
 }
 
 .footer ul {
-    display: flex;
     justify-content: left;
     list-style-type: none;
+    padding: 1rem 0;
+}
+
+.footer li {
+    padding: .5rem 0;
 }
 
 footer hr {
+    position: relative;
+    top: 40px;
     width: 120px;
+    opacity: .7;
 }
 
 .container.lang {
     margin-top: 3rem;
-    padd
 }
 
 .selected-lang {
-    margin: 2rem 0;
+    padding: 5rem 0 3rem;
+    color: gray;
+}
+
+.selected-lang span {
+    vertical-align: middle;
+}
+
+.fa-earth-americas {
+    margin-right: .5rem;
+}
+
+.fa-sort-up {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    margin-left: .2rem;
 }
