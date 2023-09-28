@@ -199,7 +199,7 @@ main .container {
 }
 
 .card {
-    width: 80%;
+    width: 65%;
     margin: 20px auto;
 }
 
@@ -303,7 +303,29 @@ main .container {
 
 .partner .row {
     flex-direction: row-reverse;
+    justify-content: flex-end;
 }
+
+.partner .col.large {
+    display: flex;
+    width: 55%;
+}
+
+.partner .col.small {
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.partner p {
+    margin: 1rem 0 3rem;
+}
+
+.partner-btn {
+    border: 1px solid gray;
+    padding: .8rem;
+}
+
+/* Features */
 
 .features .row {
     justify-content: space-between;
